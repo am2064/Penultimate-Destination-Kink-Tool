@@ -1,0 +1,11 @@
+<h1>Kink Machine for PenDes a.0.2</h1>
+<div class="well">+kinks/addcom {{bigassListOfKinks}}</div>
+
+<div ng-repeat="_kinkInfo in kinkList">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Category {{_kinkInfo.categoryCode}} - {{_kinkInfo.categoryTitle}}</h2>
+		</div>
+	</div>
+	<kink-options kink="_kink" ng-repeat="_kink in _kinkInfo.kinks"></kink-options>
+</div>
